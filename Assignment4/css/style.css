@@ -1,0 +1,140 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+    max-width: 1024px;
+    margin: auto;
+    animation: autoChaos 15s infinite;
+    animation-delay: 10s;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+header:hover {
+    background-color: #005bb5;
+}
+
+figure {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+	height:50%;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+main {
+    padding: 40px;
+    transition: all 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 30px;
+    opacity: 1;
+    animation: autoShake 15s infinite;
+    text-align: center;
+    width: 80%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The chaos begins */
+body:hover {
+    background-color: black;
+    color: red;
+    transform: rotate(180deg);
+    transition: all 5s ease-in-out;
+}
+
+header:hover {
+    background-color: red;
+    transform: scale(2) rotate(360deg);
+    transition: all 3s ease-in-out;
+}
+
+section:hover {
+    font-size: 2em;
+    color: yellow;
+    transform: skew(20deg);
+    transition: all 2s ease-in-out;
+}
+
+img:hover {
+    transform: rotate(720deg) scale(3);
+    transition: all 4s ease-in-out;
+}
+
+#surprise1, #surprise2, #surprise3 {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    animation: explode 8s ease-in-out infinite;
+    animation-delay: 10s;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); }
+    50% { transform: scale(10) rotate(180deg); }
+    100% { transform: scale(1); }
+}
+
+#surprise1 { animation-delay: 13s; }
+#surprise2 { animation-delay: 15s; }
+#surprise3 { animation-delay: 17s; }
+
+@keyframes autoChaos {
+    0%, 100% { background-color: #f9f9f9; color: olive; }
+    50% { background-color: black; color: red; transform: rotate(360deg); }
+}
+
+@keyframes autoShake {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
