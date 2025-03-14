@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Assignment 5</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+
+  <header>
+            <h1 id="main-title">Trade Talks Co.</h1>
+   </header>
+        <main>
+            <img id="main-image" src="img/luka-doncic.jpg" alt="THEY TRADED LUKA">
+            <p id="main-text">Luka Dončić is an absolute magician on the court. His court vision, footwork, and ability to control the pace of the game make him one of the most exciting players in the NBA. He’s got that old-school flair mixed with modern dominance—hitting step-back threes, throwing no-look dimes, and bullying defenders in the post despite not being the most athletic guy out there. Plus, he’s clutch. Watching him take over games, especially in the playoffs, feels like witnessing the rise of an all-time great. His competitive fire and ability to perform under pressure make him a joy to watch, and he's only getting better.</p>
+            <button id="theme-toggle">What Rob Thinks</button>
+        </main>
+  
+    
+ 
+
+
+<footer>
+<p>&#169; Tyrone King</p>
+</footer>
+
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+   <script>
+        $(document).ready(function() {
+            $("#theme-toggle").click(function() {
+                $("body").toggleClass("casual-theme");
+                if ($("body").hasClass("casual-theme")) {
+                    $("#main-title").text("THEY TRADED LUKA!!!!!!!!!THANK GOD!!!!");
+                    $("#main-text").text("Luka can be frustrating. He complains to the refs a lot, often slowing down the game and taking himself out of plays instead of hustling back on defense. Speaking of defense, it’s not exactly his strong suit—he can be a liability at times, especially against quicker guards. Then there's his ball dominance. While his offensive talent is undeniable, sometimes the Mavs’ offense feels too dependent on him, leading to stagnation. And let’s be real, his conditioning has been questionable at times, which raises concerns about longevity. So while he’s amazing, he’s not without his flaws.");
+                    $("body").addClass("fun-mode").removeClass("pro-mode");
+                    $("#main-image").attr("src", "img/FattLuka.jpg");
+                } else {
+                    $("#main-title").text("Trade Talks Co.");
+                    $("#main-text").text("Luka Dončić is an absolute magician on the court. His court vision, footwork, and ability to control the pace of the game make him one of the most exciting players in the NBA. He’s got that old-school flair mixed with modern dominance—hitting step-back threes, throwing no-look dimes, and bullying defenders in the post despite not being the most athletic guy out there. Plus, he’s clutch. Watching him take over games, especially in the playoffs, feels like witnessing the rise of an all-time great. His competitive fire and ability to perform under pressure make him a joy to watch, and he's only getting better.");
+                    $("body").addClass("pro-mode").removeClass("fun-mode");
+                    $("#main-image").attr("src", "img/luka-doncic.jpg");
+                }
+            });
+        });
+   </script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+
+
+
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 
