@@ -1,0 +1,129 @@
+/* Basic CSS resets */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #211C84;
+}
+h1 {
+	
+	color: #7A73D1;
+	
+}
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: #2E236C;
+    color: #7A73D1;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.parallax {
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+p { color: #C8ACD6;
+	
+	
+}
+
+.parallax1 { background-image: url('../img/Blackbeard.jpg'); }
+.parallax2 { background-image: url('../img/Wizard.png'); }
+.parallax3 { background-image: url('../img/wizardmoneygang.png'); }
+
+.trigger {
+    transition: color 0.5s;
+}
+
+
+
+@keyframes fadeIn {
+    20% { opacity: 0; color: black; }
+    100% { opacity: 1; color: yellow; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Initial States for Animations */
+.animated-fade, .animated-slide, .animated-scale {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.animated-fade {
+    transition: opacity 1s ease-in-out;
+}
+
+.animated-slide {
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.animated-scale {
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+
+/* Media Queries */
+@media all and (min-width: 481px) {
+    main {
+        padding: 20px 10px;
+    }
+    .parallax {
+        height: 700px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    #container {
+        width: 80%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav section {
+        flex: 0 1 48%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    nav section {
+        flex: 0 1 32%;
+    }
+}
