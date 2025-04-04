@@ -1,4 +1,4 @@
-/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+
 html, body {
 	margin:0px;
 	padding:0px;
@@ -6,7 +6,7 @@ html, body {
 }
 
 html {
-		/* Standard text-settings below */
+	
 	font-size: 1em;
     line-height: 1.4em;
 }
@@ -14,10 +14,8 @@ html {
 
 
 
-/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
-/* Global Styles */
-/* General Styles */
+
 body {
     font-family: 'Merriweather', serif;
     line-height: 1.8;
@@ -49,7 +47,7 @@ header h2 {
     opacity: 0.9;
 }
 
-/* Main Content */
+
 main {
     max-width: 750px;
     margin: 40px auto;
@@ -59,7 +57,7 @@ main {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Sections */
+
 section {
     margin-bottom: 30px;
 }
@@ -72,14 +70,12 @@ h3 {
     padding-left: 10px;
 }
 
-/* Text Styling */
 p {
     font-size: 1.1em;
     color: #FEC260;
     margin-bottom: 15px;
 }
 
-/* Lists */
 ul, ol {
     margin: 10px 0;
     padding-left: 20px;
@@ -91,7 +87,6 @@ ul li, ol li {
     color: #F7374F;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -101,7 +96,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     main {
         width: 90%;
