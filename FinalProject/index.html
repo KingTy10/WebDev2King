@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Final Project</title>
+	
+	<link rel="stylesheet" href="https://unpkg.com/psone@latest/dist/psone.min.css">
+
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+
+  <header>
+		
+
+
+
+		<span class="Spanbtn" id="menuToggle" onclick="toggleNav()">&#9776;</span>
+          
+		  <div class="psone-panel">
+		   <h1 class="psone-title"> Insurance: The Forever Spoken Unheard Conversation</h1>
+			<h2> by Tyrone King</h2> 
+			</div>
+			
+			
+			
+  </header>
+   <div id ="Mainnav" class="TheMainNav"> 
+		<a href="Artifact1FINAL/index.html">Artifact 1</a>
+		<a href="CreativeExplorationFINAL/index.html">Creative Exploration</a>
+		<a href="Artifact2FINAL/index.html">Artifact 2</a>
+		<a href="Artifact3FINAL/index.html">Artifact 3</a>
+		<a href="WEBDEVNOTES/index.html">Web Dev Notes</a>	
+   </div>
+   
+   
+   <main>
+	   <section class="main-text">
+        <p>
+          Insurance is meant to offer peace of mind—but for many, it’s become a source of frustration. Rising premiums, confusing policies, and denied claims have left people questioning the value of the coverage they pay for. In an era of economic uncertainty and increasing risk, conversations around insurance are growing louder and more critical. At {Your Business Name}, we dive into these concerns, break down what’s really happening in the industry, and help you navigate your options with clarity and confidence.
+        </p>
+      </section>
+
+      <section class="dev-notes">
+        <h3>Dev Notes</h3>
+        <ul>
+          <li>Clicking outside the modal sometimes submits the form. Why?</li>
+          <li>NaN shows up in the pricing summary when quantity = 0. Classic.</li>
+          <li>User avatars not loading on Firefox — check for WebP support fallback.</li>
+        </ul>
+      </section>
+	
+   
+            
+   </main>
+  
+    
+ 
+
+
+<footer class="footer">
+<p>&#169; Tyrone King , 2025 
+webdev 2 proflio</p>
+</footer>
+
+
+  </div><!-- close "container" -->
+  
+   <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+<script>
+function toggleNav() {
+  const nav = document.getElementById("Mainnav");
+  const btn = document.getElementById("menuToggle");
+
+  if (nav.style.width === "250px") {
+    nav.style.width = "0";
+    btn.innerHTML = "&#9776;"; // ☰
+  } else {
+    nav.style.width = "250px";
+    btn.innerHTML = "&times;"; // ×
+  }
+}
+</script>
+
+</body>
+	
+</html> 
