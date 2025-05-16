@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Web Dev Notes</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header>
+
+<h1>Web Dev Notes</h1> 
+
+
+</header>
+
+
+<main>
+
+<p class="mobile">
+ 
+</p>
+
+<p class="desktop">
+
+</p>
+<p>
+
+<div class="section-wrapper">
+<div class="section">
+
+<p> So the final part of the website coding all of this has made me gain an appreciation for the language to a certain extent but to be completely honest this was one of the more cramped things I did since I coded all of this in a week I feel that I could've done a lot more the hardest part for me was considering mobile users main reasoning being that I had to change the layout for them completely and to me at that time I was considering just do an app cause screw mobile users the next hardest most masochist thing i did was these damm web dev notes and navigation since i felt just leaving them at normal boxes would have been boring kinda like this page so maybe you should click the nav and leave the masochist to his self inflicted pain……Oh last thing the game system stuff I gave up cause wtf is the PS library maybe I'm stupid but it didn't work womp womp but yeah get outta here already why are you even reading this really just me talking to myself for no reason..... </p>
+
+</div>
+
+<div class="right-box" >
+<p> So still here huh ?? </p>
+
+ </div>
+
+</div>
+
+ </p>
+ 
+ </main>
+ 
+ 
+<div id ="Mainnav" class="TheMainNav"> 
+
+		<a href="../index.html">Home</a>
+		<a href="../Artifact1FINAL/index.html">Artifact 1</a>
+		<a href="../CreativeExplorationFINAL/index.html">Creative Exploration</a>
+		<a href="../Artifact2FINAL/index.html">Artifact 2</a>
+		<a href="../Artifact3FINAL/index.html">Artifact 3</a>
+		<a href="LOADINGG/index.html">?</a>
+		
+
+</div>
+<span class="Spanbtn" id="menuToggle">&#9776;</span>
+
+<!-- Toggle Button for mobile -->
+<button id="navToggle" class="nav-toggle">☰</button>
+
+<!-- This is for mobile (initially hidden) -->
+<nav id="mainNav" class="hidden">
+  <ul class="nav-bar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../Artifact1FINAL/index.html">Artifact 1</a></li>
+    <li><a href="../Artifact2FINAL/index.html">Artifact 2</a></li>
+    <li><a href="../Artifact3FINAL/index.html">Artifact 3</a></li>
+    <li><a href="../WEBDEVNOTES/index.html">Web Dev !!!!!!</a></li>
+  </ul>
+</nav>
+
+</main>
+
+<div class="footer">
+<footer>
+<p>&#169; Tyrone King , 2025 
+webdev 2 Final</p>
+</footer>
+</div>
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+const nav = document.querySelector('.TheMainNav');
+const toggleBtn = document.querySelector('.Spanbtn');
+
+toggleBtn.addEventListener('click', () => {
+  if (nav.style.width === '250px') {
+    nav.style.width = '0';
+  } else {
+    nav.style.width = '250px';
+  }
+});
+</script>
+<script>
+  const toggleBtn = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+	
+</html> 

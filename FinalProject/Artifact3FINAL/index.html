@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Final Project</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header>
+
+
+
+<h1>Artifact 3</h1>
+
+
+</header>
+
+
+
+
+<p class="mobile">
+ 
+</p>
+
+<p class="desktop">
+
+</p>
+
+<div id ="Mainnav" class="TheMainNav"> 
+		
+		<a href="../index.html">Home</a>
+		<a href="../Artifact1FINAL/index.html">Artifact 1</a>
+		<a href="../CreativeExplorationFINAL/index.html">Creative Exploration</a>
+		<a href="../Artifact2FINAL/index.html">Artifact 2</a>
+		<a href="../WEBDEVNOTES/index.html">Web Dev Notes</a>
+
+</div>
+<span class="Spanbtn" id="menuToggle">&#9776;</span>
+<!-- Toggle Button for mobile -->
+<button id="navToggle" class="nav-toggle">☰</button>
+
+<!-- This is for mobile (initially hidden) -->
+<nav id="mainNav" class="hidden">
+  <ul class="nav-bar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../Artifact1FINAL/index.html">Artifact 1</a></li>
+    <li><a href="../Artifact2FINAL/index.html">Artifact 2</a></li>
+    <li><a href="../Artifact3FINAL/index.html">Artifact 3</a></li>
+    <li><a href="../WEBDEVNOTES/index.html">Web Dev !!!!!!</a></li>
+  </ul>
+</nav>
+
+
+<main>
+
+
+	<div class= "section">
+        <p>Going into this research artifact, I had a couple of lingering questions from my last one:</p>
+        
+        <ul>
+            <li><strong>The Patient Perspective</strong> – How do insurance policies impact those directly receiving care?</li>
+            <li><strong>The Luigi Mangione Connection</strong> – How does this controversy tie into UnitedHealthcare’s handling of their CEO’s assassination?</li>
+        </ul>
+
+        <p>To answer these, I took my usual research approach—scouring the internet for articles and perspectives. This time, I focused on sources like <a href="https://www.uncp.edu/" target="_blank">UNC Pembroke</a> and <a href="https://www.cbsnews.com/" target="_blank">CBS News</a> to gain insight from the consumer's side. My previous artifact primarily examined the provider’s perspective, but now I wanted to explore how patients are affected by insurance policies.</p>
+
+        <p>What I found reinforced an ongoing issue in the healthcare system: the role of insurance companies as middlemen. In many industries, the middleman typically connects the provider and consumer, but in healthcare, the patient often becomes the middleman—trapped between medical bills, coverage issues, and insurance policies. One might assume that doctors or physicians would fill this role, but more often than not, it's the patient navigating complex insurance barriers.</p>
+
+        <p>One of the key articles I read, from UNC Pembroke, detailed how insurance companies implement cost-control strategies that increase expenses for patients while also creating challenges for providers. These include:</p>
+
+        <ul>
+            <li><strong>Low Reimbursement Rates</strong> – Insurance companies pay healthcare providers set amounts for services, often lower than the actual cost of care. This forces hospitals and clinics to compensate by raising prices elsewhere, making care more expensive overall.</li>
+            <li><strong>Prior Authorization Requirements</strong> – Patients and providers must obtain approval before certain procedures, medications, or treatments are covered. This delays necessary care, sometimes with serious consequences for patients with urgent medical needs.</li>
+            <li><strong>Claims Denials & Utilization Reviews</strong> – Even when claims are properly submitted, insurers often deny them, requiring an appeal process that adds administrative burdens and further delays provider payments.</li>
+        </ul>
+		
+	
+	</div>
+	<div class="section-wrapper">
+	<div class="section2">
+        <p>These policies don’t just affect healthcare providers—they create significant financial and medical burdens for patients. The research helped solidify the idea that insurance companies prioritize cost-cutting over patient care, leaving individuals stuck in a system that often prioritizes profit over well-being.</p>
+
+        <p>As for the Luigi Mangione connection, I found that his grievances against the healthcare industry, particularly UnitedHealthcare, seemed to stem from a personal injury and his frustration with the system. This incident raises larger questions about corporate accountability in healthcare and whether frustration with insurers, like UHC, could lead to more public backlash or even inspire policy reform. While this case is an extreme example, it highlights how deeply personal and financial struggles with insurance can escalate into larger societal issues.</p>
+
+        <p>This research has only deepened my interest in the role insurance companies play in shaping healthcare policy, costs, and access. Moving forward, I plan to explore potential reforms and policy efforts aimed at reducing the negative impact of these insurance practices.</p>
+
+        <p>On top of the things mentioned above, while his actions are not justified, they are very understandable and likely relatable for others who have felt similar frustrations. At the end of the day, we are not drones—we are humans. Unfortunately, sometimes humans act out of pure emotion. However, those actions don’t always invalidate the problem. A lot of the time, they do the opposite—they expose a bigger issue and bring a brewing conversation to the forefront.</p>
+
+        <p>Whether you agree with Luigi Mangione’s actions or not, he undeniably shone a spotlight on a topic that almost every human in any country has to deal with to some extent.</p>
+		</div>
+		
+		<div class="right-box">
+		
+				<p> Web Dev Notes:
+					so another attempt of being the world greatest masochist this one i had to look up with some help
+					but it something to break up how monotonus this text can get and it has some animations still trying for the game feel 
+					but at the end of the day as long as the website look somewhat appealing 
+				
+				
+				</p>
+			
+			</div>
+		
+		
+	</div>
+
+</main>
+
+<div class= "footer">
+<footer>
+<p>&#169; Tyrone King , 2025 
+webdev 2 Final</p>
+</footer>
+</div>
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+   <script>
+const nav = document.querySelector('.TheMainNav');
+const toggleBtn = document.querySelector('.Spanbtn');
+
+toggleBtn.addEventListener('click', () => {
+  if (nav.style.width === '250px') {
+    nav.style.width = '0';
+  } else {
+    nav.style.width = '250px';
+  }
+});
+</script>
+
+<script>
+  const toggleBtn = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+	
+</html> 

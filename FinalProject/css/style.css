@@ -1,0 +1,455 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+@font-face {
+  font-family: 'Call of Ops Duty';
+  src: url('CallOfOpsDutyIi-7Bgm4.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'Knight Warrior';
+  src: url('KnightWarrior-w16n8.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+body {
+
+    font-family: 'Knight Warrior', sans-serif;
+	line-spacing:1.5;
+    background:gray;
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+	  letter-spacing: 0.05em;
+}
+.psone-title
+{
+	 font-family: 'Call of Ops Duty', sans-serif;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+.psone-panel {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #00AA9E; /* Light grey background */
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0px #000;
+}
+
+
+
+
+
+
+
+
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.main-text {
+  background: #B40021;
+  color: Black;
+  padding: 20px;
+  margin-top: 15px;
+  border: 2px solid #000;
+  line-height: 1.5;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.dev-notes {
+  background: #0459BE;
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+ min-width: 200px;
+  min-height: 200px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dev-notes h3 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.footer {
+  background: #ffb300;
+  color: #000;
+  text-align: left;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0px #000;
+}
+
+
+nav ul
+{
+	list-style:none;
+	padding-left:0px;
+}
+nav ul li 
+{ 
+	border: 1px solid #000000;
+	display: block; 
+	text-decoration: none;
+	color : black; 
+	text-align: center;
+	background: white;
+	opacity:60%; 
+}
+nav ul li a:hover
+{
+	background:#dde2f;
+	margin: 5px;
+	
+}
+.TheMainNav
+{
+	height:100%; 
+	width:0;
+	position:fixed; 
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x:hidden;
+	padding-top:30px;
+	transition:0.5s;
+	
+}
+.TheMainNav a
+{ 
+	padding:8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	transition: 0.3s;
+	color:#ffb300;
+
+}
+.TheMainNav a:hover 
+{
+	color:#00AA9E;; 
+}
+
+.TheMainNav .closebtn
+{
+	position: absolute;
+	top: 0;
+	right: 15px; 
+	margin-left:50px;
+	font-size: 20px;
+}
+.Spanbtn
+{
+	position:fixed;
+	top: 10px;
+	left: 10px;
+	font-size:20px; 
+	cursor: pointer; 
+	z-index:3;
+	color:#00AA9E;
+	
+}
+
+/* Mobile first: hide desktop nav and its toggle */
+.TheMainNav,
+.Spanbtn {
+  display: none;
+}
+
+	
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #326DB3;
+  box-shadow: 4px 4px 0px #000;
+  z-index: 1000;
+
+
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+
+nav.hidden {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.nav-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  font-size: 18px;
+  background: #DFB200;
+  border: 2px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+}
+
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-bar li {
+  flex: 1 1 auto;
+  text-align: center;
+  border: 1px solid black;
+  background: #B40021;
+
+  opacity: 0.6;
+}
+
+
+.nav-bar li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+    color: white;
+  font-weight: bold;
+}
+
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	#container {
+		width:80%;
+	}
+		
+	
+	
+	nav ul
+{
+	list-style:none;
+	padding-left:0px;
+}
+nav ul li 
+{ 
+	border: 1px solid #000000;
+	display: block; 
+	text-decoration: none;
+	color : black; 
+	text-align: center;
+	background: white;
+	opacity:60%; 
+}
+nav ul li a:hover
+{
+	background:#dde2f;
+	margin: 5px; 
+}
+.TheMainNav
+{
+	height:100%; 
+	width:0;
+	position:fixed; 
+	z-index:1 ;
+	top: 0;
+	left: 0;
+	overflow-x:hidden;
+	padding-top:30px;
+	transition:0.5s;
+	
+}
+.TheMainNav a
+{ 
+	padding:8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	transition: 0.3s;
+		color:#DFB200;
+}
+.TheMainNav a:hover 
+{
+	color:#B40021; 
+}
+
+.TheMainNav .closebtn
+{
+	position: absolute;
+	top: 0;
+	right: 15px; 
+	margin-left:50px;
+	font-size: 20px;
+}
+.Spanbtn
+{
+	position:fixed;
+	top: 10px;
+	left: 10px;
+	font-size:20px; 
+	cursor: pointer; 
+	z-index:3;
+	color:#B40021;
+}
+
+
+	
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	nav ul
+{
+	list-style:none;
+	padding-left:0px;
+}
+nav ul li 
+{ 
+	border: 1px solid #000000;
+	display: block; 
+	text-decoration: none;
+	color : black; 
+	text-align: center;
+	background: white;
+	opacity:60%; 
+}
+nav ul li a:hover
+{
+	background:#dde2f;
+	margin: 5px;
+	
+}
+.TheMainNav
+{
+	height:100%; 
+	width:0;
+	position:fixed; 
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x:hidden;
+	padding-top:30px;
+	transition:0.5s;
+	
+}
+.TheMainNav a
+{ 
+	padding:8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	transition: 0.3s;
+	color:#ffb300;
+
+}
+.TheMainNav a:hover 
+{
+	color:#00AA9E;; 
+}
+
+.TheMainNav .closebtn
+{
+	position: absolute;
+	top: 0;
+	right: 15px; 
+	margin-left:50px;
+	font-size: 20px;
+}
+.Spanbtn
+{
+	position:fixed;
+	top: 10px;
+	left: 10px;
+	font-size:20px; 
+	cursor: pointer; 
+	z-index:3;
+	color:#00AA9E;
+	
+}
+
+.TheMainNav,
+.Spanbtn {
+  display: block; /* show desktop nav and toggle */
+}
+#mainNav,
+#navToggle {
+  display: none; /* hide mobile nav and toggle on bigger screens */
+}
+
+	
+} /* closes 1024px+ */
+
+
