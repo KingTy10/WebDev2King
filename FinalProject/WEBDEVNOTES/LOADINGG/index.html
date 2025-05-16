@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>????????????????????</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header>
+<h1> ???????????????????????????????????????</h1>
+
+
+</header>
+
+
+<main>
+<div class="section">
+
+<p>YIPEEEE THERE NOTHING HERE I DOUBLE DAWG DARE YOU TO  <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">CLICK THIS</a>
+
+</div>
+
+  <div id="confetti-container" aria-hidden="true"></div>
+
+
+<div id ="Mainnav" class="TheMainNav"> 
+
+		<a href="../../index.html">Home</a>
+		<a href="../../Artifact1FINAL/index.html">Artifact 1</a>
+		<a href="../../CreativeExplorationFINAL/index.html">Creative Exploration</a>
+		<a href="../../Artifact2FINAL/index.html">Artifact 2</a>
+		<a href="../../Artifact3FINAL/index.html">Artifact 3</a>
+		<a href="../../index.html">Web Dev Notes</a>
+		
+
+</div>
+<span class="Spanbtn" id="menuToggle">&#9776;</span>
+
+
+<!-- Toggle Button for mobile -->
+<button id="navToggle" class="nav-toggle">☰</button>
+
+<!-- This is for mobile (initially hidden) -->
+<nav id="mainNav" class="hidden">
+  <ul class="nav-bar">
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../Artifact1FINAL/index.html">Artifact 1</a></li>
+    <li><a href="../../Artifact2FINAL/index.html">Artifact 2</a></li>
+    <li><a href="../../Artifact3FINAL/index.html">Artifact 3</a></li>
+    <li><a href="../../WEBDEVNOTES/index.html">Web Dev !!!!!!</a></li>
+  </ul>
+</nav>
+<main>
+
+
+</main>
+
+<div class="footer">
+<footer>
+<p>&#169; Tyrone King , 2025 
+webdev 2 Final</p>
+</footer>
+</div>
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  
+ <script>
+  // For the side nav (.TheMainNav)
+  const sideNav = document.querySelector('.TheMainNav');
+  const sideToggleBtn = document.querySelector('.Spanbtn');
+
+  sideToggleBtn.addEventListener('click', () => {
+    if (sideNav.style.width === '250px') {
+      sideNav.style.width = '0';
+    } else {
+      sideNav.style.width = '250px';
+    }
+  });
+</script>
+
+<script>
+  // For the mobile top nav (#mainNav)
+  const mobileToggleBtn = document.getElementById('navToggle');
+  const mobileNav = document.getElementById('mainNav');
+
+  mobileToggleBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+  });
+</script>
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('confetti-container');
+      const colors = ['color1', 'color2', 'color3', 'color4', 'color5'];
+      const numberOfPieces = 30;
+
+      for (let i = 0; i < numberOfPieces; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti-piece');
+
+        // Random color
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        confetti.classList.add(color);
+
+        // Random horizontal position
+        confetti.style.left = Math.random() * 100 + 'vw';
+
+        // Random animation duration (2–5s)
+        const duration = (Math.random() * 3 + 2).toFixed(2);
+        confetti.style.animationDuration = duration + 's';
+
+        // Random delay (0–3s)
+        const delay = (Math.random() * 3).toFixed(2);
+        confetti.style.animationDelay = delay + 's';
+
+        // Assign animation
+        confetti.style.animationName = 'fall';
+
+        container.appendChild(confetti);
+
+        // Remove after animation ends
+        confetti.addEventListener('animationend', () => {
+          confetti.remove();
+        });
+      }
+    });
+  </script>
+
+</body>
+	
+</html> 

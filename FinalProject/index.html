@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Final Project</title>
+	
+	<link rel="stylesheet" href="https://unpkg.com/psone@latest/dist/psone.min.css">
+
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+
+
+  <header>
+		
+
+
+
+	
+	
+	<h1>Insurance: The Forever Spoken Unheard Conversation</h1>
+			
+			
+			
+			
+			
+  </header>
+  
+  
+  
+  
+  <p class="mobile">
+ 
+</p>
+
+<p class="desktop">
+
+</p>
+  
+  
+  
+  <span class="Spanbtn" id="menuToggle">&#9776;</span> 
+   <div id ="Mainnav" class="TheMainNav">
+		<a href="../index.html">Home</a>   
+		<a href="Artifact1FINAL/index.html">Artifact 1</a>
+		<a href="CreativeExplorationFINAL/index.html">Creative Exploration</a>
+		<a href="Artifact2FINAL/index.html">Artifact 2</a>
+		<a href="Artifact3FINAL/index.html">Artifact 3</a>
+		<a href="WEBDEVNOTES/index.html">Web Dev Notes</a>	
+   </div>
+
+   
+   
+   
+   
+   
+   
+   <!-- Toggle Button for mobile -->
+<button id="navToggle" class="nav-toggle">☰</button>
+
+<!-- This is for mobile (initially hidden) -->
+<nav id="mainNav" class="hidden">
+  <ul class="nav-bar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="Artifact1FINAL/index.html">Artifact 1</a></li>
+    <li><a href="Artifact2FINAL/index.html">Artifact 2</a></li>
+    <li><a href="Artifact3FINAL/index.html">Artifact 3</a></li>
+    <li><a href="WEBDEVNOTES/index.html">Web Dev !!!!!!</a></li>
+  </ul>
+</nav>
+   
+   <main>
+	   <section class="main-text">
+        <p>
+          Insurance is meant to offer peace of mind—but for many, it’s become a source of frustration. Rising premiums, confusing policies, and denied claims have left people questioning the value of the coverage they pay for. In an era of economic uncertainty and increasing risk, conversations around insurance are growing louder and more critical. So I put what I research for the past month into what is kinda of look inot the current climate around Insurance and some recent event in the Industry 
+        </p>
+      </section>
+
+      <section class="dev-notes">
+        <h3> Web Dev Notes</h3>
+        <ul>
+         So this being the first page kinda set the template for the rest of the website i def finna try and do different things throughout but having a page to go back to is nice 
+		 when i original made this page it was probably around 12 in the at night so it wasn't the greatest time but it got done still not complete until you see a different font for everything to make it look a little bit more gamey at this point im kinda giving up on the game aesthic over all 
+		 
+		 ,ps this is later me add a glass like fliter or tried to lmao
+		 
+        </ul>
+      </section>
+	
+   
+            
+   </main>
+  
+    
+ 
+
+
+<footer class="footer">
+<p>&#169; Tyrone King , 2025 
+webdev 2 Final</p>
+</footer>
+
+
+  </div><!-- close "container" -->
+  
+   <!-- Link to jQuery on Google Hosted Libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+ 
+ <script>
+  // For the side nav (.TheMainNav)
+  const sideNav = document.querySelector('.TheMainNav');
+  const sideToggleBtn = document.querySelector('.Spanbtn');
+
+  sideToggleBtn.addEventListener('click', () => {
+    if (sideNav.style.width === '250px') {
+      sideNav.style.width = '0';
+    } else {
+      sideNav.style.width = '250px';
+    }
+  });
+</script>
+
+<script>
+  // For the mobile top nav (#mainNav)
+  const mobileToggleBtn = document.getElementById('navToggle');
+  const mobileNav = document.getElementById('mainNav');
+
+  mobileToggleBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+	
+</html> 
